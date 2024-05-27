@@ -2,12 +2,12 @@
 
 ## Network Overview
 
-This network design includes multiple VLANs across several switches, including Core Switches, Distribution Switches, and Access Switches. The design incorporates dynamic routing with OSPF, VLAN segmentation, and DHCP for IP address management. Spanning Tree Protocol (STP) is used to ensure a loop-free topology.
+This network design includes multiple VLANs across several switches, including Core Switches, Distribution Switches, and Access Switches.
+The design incorporates dynamic routing with OSPF, VLAN segmentation, and DHCP for IP address management.
+Spanning Tree Protocol (STP) is used to ensure a loop-free topology.
 
 ## Network Topology Diagram
 
-```mermaid
-graph TD;
     CoreSwitch1 --> DistSwitch1;
     CoreSwitch1 --> DistSwitch2;
     DistSwitch1 --> AccessSwitch1;
@@ -22,7 +22,6 @@ graph TD;
     AccessSwitch3 --> ESwitch10;
     AccessSwitch4 --> ESwitch11;
     AccessSwitch4 --> ESwitch12;
-```
 
 ## VLAN Configuration
 
